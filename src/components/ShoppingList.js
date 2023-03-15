@@ -4,7 +4,7 @@ import Item from "./Item";
 
 function ShoppingList({ items }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  
+
   const itemsToDisplay = items.filter((item) => {
     if (selectedCategory === "All") return true;
 
@@ -12,8 +12,6 @@ function ShoppingList({ items }) {
   });
 
   const onCategoryChange = (e) => setSelectedCategory(e.target.value);
-
-
 
   return (
     <div className="ShoppingList">

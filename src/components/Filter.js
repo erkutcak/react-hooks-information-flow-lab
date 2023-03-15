@@ -1,6 +1,6 @@
 import React from "react";
 
-function Filter({onCategoryChange, itemsToDisplay}) {
+function Filter({onCategoryChange}) {
     
     // const handleOnChange = (e) => onCategoryChange(e.target.value);
 
